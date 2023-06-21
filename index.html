@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
@@ -70,14 +71,15 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">Cheat Sheet</a>
+                        <a class="nav-link" href="https://education.github.com/git-cheat-sheet-education.pdf"
+                            target="_blank">Cheat Sheet</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container main">
+    <div class="container main" id="home">
         <h1 class="text-center">Git & Github</h1>
         <div class="img-container">
             <img src="./img/git__home.png" alt="image arbre git">
@@ -95,20 +97,20 @@
                 aujourd'hui:</p>
             <h3 class="my-5">Jour 1:</h3>
             <ol>
-                <li> Qu'est-ce que Git ?
+                <li><b> Qu'est-ce que Git ?</b>
                     <ul>
                         <li>Les principes de base des systèmes de contrôle de version.</li>
                         <li>Pourquoi Git est-il populaire dans le développement logiciel ?</li>
                     </ul>
                 </li>
-                <li> Configuration de Git :
+                <li> <b>Configuration de Git :</b>
                     <ul>
                         <li>Installation de Git sur votre machine.</li>
                         <li>Configuration initiale de Git : nom d'utilisateur, adresse e-mail, etc.</li>
                         <li>Expliquer le fichier .gitconfig.</li>
                     </ul>
                 </li>
-                <li>Les commandes de base :
+                <li><b>Les commandes de base :</b>
                     <ul>
                         <li>Initialiser un référentiel Git.</li>
                         <li>Effectuer des commits.</li>
@@ -117,7 +119,7 @@
                         <li>Ignorer des fichiers avec le fichier .gitignore.</li>
                     </ul>
                 </li>
-                <li>Branches et fusion :
+                <li><b>Branches et fusion :</b>
                     <ul>
                         <li>Comprendre les branches.</li>
                         <li>Créer une nouvelle branche.</li>
@@ -125,7 +127,7 @@
                         <li>Fusionner les branches.</li>
                     </ul>
                 </li>
-                <li> Travailler avec des dépôts distants :
+                <li> <b>Travailler avec des dépôts distants :</b>
                     <ul>
                         <li>Introduction à GitHub.</li>
                         <li>Créer un compte GitHub.</li>
@@ -166,13 +168,21 @@
                 approche
                 permet de travailler en mode déconnecté et facilite la collaboration avec d'autres développeurs.</p>
 
-            <ul>
-                <li>Git est rapide et performant, ce qui est essentiel pour les projets de grande envergure.</li>
-                <li>Il prend en charge les branches, permettant à plusieurs développeurs de travailler simultanément sur
-                    différentes fonctionnalités.</li>
-                <li>Git propose des outils puissants pour gérer les conflits de fusion.</li>
-                <li>Il offre une intégration facile avec des services d'hébergement de code tels que GitHub.</li>
-            </ul>
+            <div class="exos">
+                <b>
+                    <ul>
+                        <li>Git est rapide et performant, ce qui est essentiel pour les projets de grande envergure.
+                        </li>
+                        <li>Il prend en charge les branches, permettant à plusieurs développeurs de travailler
+                            simultanément
+                            sur
+                            différentes fonctionnalités.</li>
+                        <li>Git propose des outils puissants pour gérer les conflits de fusion.</li>
+                        <li>Il offre une intégration facile avec des services d'hébergement de code tels que GitHub.
+                        </li>
+                    </ul>
+                </b>
+            </div>
 
             <p>Maintenant que nous comprenons les bases de Git, passons à la configuration de Git sur votre machine.
                 Assurez-vous d'avoir Git installé avant de continuer.</p>
@@ -196,7 +206,7 @@
                 <h4>Exercice pratique 2:</h4>
 
                 <ol>
-                    <li>Installation de Git :
+                    <li><b>Installation de Git :</b>
                         <ul>
                             <li>Rendez-vous sur le site officiel de Git (<a href="https://git-scm.com/"
                                     target="_blank">https://git-scm.com/</a>) et téléchargez la version
@@ -204,7 +214,7 @@
                             <li>Suivez les instructions d'installation pour installer Git sur votre machine.</li>
                         </ul>
                     </li>
-                    <li>Configuration initiale de Git :
+                    <li><b>Configuration initiale de Git :</b>
                     <li>Ouvrez un terminal et exécutez la commande suivante pour configurer votre nom d'utilisateur Git
                         :
                         <b>git config --global user.name "Votre Nom"</b>.</li>
@@ -239,15 +249,15 @@
                 <h4>Exercice pratique 3:</h4>
 
                 <ol>
-                    <li>Initialiser un référentiel Git :
+                    <li><b>Initialiser un référentiel Git :</b>
                         <ul>
                             <li>Créez un nouveau répertoire vide sur votre machine pour votre projet.</li>
                             <li>Ouvrez un terminal, accédez au répertoire du projet et exécutez la commande suivante :
-                                <b>git init</b>.</li>
+                                <b>git init</b></li>
                             <li>Cela initialisera un nouveau référentiel Git dans votre répertoire.</li>
                         </ul>
                     </li>
-                    <li>Effectuer des commits :
+                    <li><b>Effectuer des commits :</b>
                         <ul>
                             <li>Créez un fichier dans votre répertoire, ajoutez-y du contenu et enregistrez les
                                 modifications.</li>
@@ -261,7 +271,7 @@
                                 dans un commit.</li>
                         </ul>
                     </li>
-                    <li>Voir l'historique des commits :
+                    <li><b>Voir l'historique des commits :</b>
                         <ul>
                             <li>Utilisez la commande <b>git log</b> pour afficher l'historique des commits.</li>
                             <li>Examinez les informations affichées, telles que l'auteur du commit, la date et l'heure,
@@ -269,7 +279,7 @@
                                 message de commit, etc.</li>
                         </ul>
                     </li>
-                    <li>Comparer les versions et annuler les modifications :
+                    <li><b>Comparer les versions et annuler les modifications :</b>
                         <ul>
                             <li>Utilisez la commande <b>git diff</b> pour afficher les différences entre les
                                 modifications non
@@ -279,7 +289,7 @@
                                     checkout -- nom du fichier.</b></li>
                         </ul>
                     </li>
-                    <li>Ignorer des fichiers avec le fichier <b>.gitignore</b> :
+                    <li><b>Ignorer des fichiers avec le fichier .gitignore :</b>
                         <ul>
                             <li>Créez un fichier nommé <b>.gitignore</b> dans votre répertoire de projet.</li>
                             <li>Ajoutez les noms de fichiers ou de dossiers que vous souhaitez ignorer dans ce fichier.
@@ -309,7 +319,7 @@
                 <h4>Exercice pratique 4:</h4>
 
                 <ol>
-                    <li>Comprendre les branches :
+                    <li><b>Comprendre les branches :</b>
                         <ul>
                             <li>Utilisez la commande <b>git branch</b> pour afficher la liste des branches dans votre
                                 référentiel.
@@ -317,28 +327,28 @@
                             <li>La branche actuelle est mise en évidence avec un astérisque (*).</li>
                         </ul>
                     </li>
-                    <li>Créer une nouvelle branche :
+                    <li><b>Créer une nouvelle branche :</b>
                         <ul>
-                            <li>Utilisez la commande git branch <b>nom de la branche</b> pour créer une nouvelle
+                            <li>Utilisez la commande <b>git branch nomDeLaBranche</b> pour créer une nouvelle
                                 branche.
                             </li>
                             <li>Vous pouvez baser la nouvelle branche sur une branche existante en utilisant la commande
-                                git
-                                branch <b>nom de la branche</b> <b>branche de base</b></li>
+                                <b>git
+                                    branch nomDeLaBranche</b> <b>branchDeBase</b></li>
                         </ul>
                     </li>
-                    <li>Basculer entre les branches :
+                    <li><b>Basculer entre les branches :</b>
                         <ul>
-                            <li>Utilisez la commande git checkout <b>nom de la branche</b> pour basculer vers une
+                            <li>Utilisez la commande <b>git checkout nomDeLaBranche</b> pour basculer vers une
                                 branche
                                 spécifique.</li>
                             <li>Assurez-vous d'enregistrer vos modifications avant de basculer vers une autre branche.
                             </li>
                         </ul>
                     </li>
-                    <li>Fusionner les branches :
+                    <li><b>Fusionner les branches :</b>
                         <ul>
-                            <li>Utilisez la commande git merge <b>branche à fusionner</b> pour fusionner une branche
+                            <li>Utilisez la commande <b>git merge brancheAFusionner</b> pour fusionner une branche
                                 dans la
                                 branche actuelle.</li>
                             <li>En cas de conflit de fusion, vous devrez résoudre les conflits manuellement avant de
@@ -362,7 +372,7 @@
                 <h4>Exercice pratique 5:</h4>
 
                 <ol>
-                    <li>Introduction à GitHub :
+                    <li><b>Introduction à GitHub :</b>
                         <ul>
                             <li>Rendez-vous sur le site de GitHub (<a href="https://github.com/"
                                     target="_blank">https://github.com/</a>) et créez un compte si vous n'en
@@ -371,7 +381,7 @@
                             <li>Familiarisez-vous avec l'interface et les fonctionnalités de GitHub.</li>
                         </ul>
                     </li>
-                    <li>Créer un nouveau dépôt sur GitHub :
+                    <li><b>Créer un nouveau dépôt sur GitHub :</b>
                         <ul>
                             <li>Connectez-vous à votre compte GitHub et créez un nouveau dépôt en suivant les
                                 instructions
@@ -379,15 +389,15 @@
                             <li>Vous pouvez choisir de rendre le dépôt public ou privé.</li>
                         </ul>
                     </li>
-                    <li>Cloner un dépôt existant :
+                    <li><b>Cloner un dépôt existant :</b>
                         <ul>
                             <li>Sur la page du dépôt GitHub, cliquez sur le bouton "Code" et copiez l'URL du dépôt.</li>
-                            <li>Utilisez la commande git clone <b>URL du dépôt</b> pour cloner le dépôt sur votre
+                            <li>Utilisez la commande <b>git clone URLduDépôt</b> pour cloner le dépôt sur votre
                                 machine.
                             </li>
                         </ul>
                     </li>
-                    <li>Pousser et tirer les modifications :
+                    <li><b>Pousser et tirer les modifications :</b>
                         <ul>
                             <li>Effectuez des modifications locales dans votre référentiel.</li>
                             <li>Utilisez la commande <b>git push</b> pour envoyer vos modifications vers le dépôt
@@ -420,27 +430,27 @@
             <p>Avant de commencer, voici un aperçu de ce que nous allons couvrir aujourd'hui :</p>
 
             <ol>
-                <li>Révision du Jour 1
+                <li><b>Révision du Jour 1</b>
                     <ul>
                         <li>Revoir les concepts clés de Git.</li>
                         <li>Répondre aux questions ou aux difficultés rencontrées.</li>
                     </ul>
                 </li>
-                <li>Travail collaboratif avec Git :
+                <li><b>Travail collaboratif avec Git :</b>
                     <ul>
                         <li>Cloner un dépôt distant.</li>
                         <li>Travailler sur des branches et gérer les conflits de fusion.</li>
                         <li>Envoyer des demandes de fusion (pull requests) sur GitHub.</li>
                     </ul>
                 </li>
-                <li>Fonctionnalités avancées de Git :
+                <li><b>Fonctionnalités avancées de Git :</b>
                     <ul>
                         <li>Utilisation des alias pour simplifier les commandes.</li>
                         <li>Réécriture de l'historique des commits.</li>
                         <li>Utilisation des tags pour marquer des versions.</li>
                     </ul>
                 </li>
-                <li>Utilisation avancée de GitHub :
+                <li><b>Utilisation avancée de GitHub :</b>
                     <ul>
                         <li>Gestion des problèmes (issues) et des projets.</li>
                         <li>Collaboration avec des équipes et des contributeurs.</li>
@@ -529,7 +539,7 @@
                     puissantes pour la gestion des projets, la collaboration avec les équipes et la sécurité.</p>
 
                 <div class="exos">
-                    <h4>Exercice pratique 3:</h4>
+                    <h4>Exercice pratique 4:</h4>
                     <ol>
                         <li>Créez un problème (issue) sur un dépôt GitHub en utilisant l'interface Web.</li>
                         <li>Travaillez en équipe en ajoutant des collaborateurs à un dépôt et en gérant les
@@ -560,7 +570,7 @@
     </div>
 
     <footer>
-        <p class="footer text-center">Julien Lebron - Tous droits réservés.</p>
+        <p class="footer text-center">Julien Lebron - Tous droits réservés. <a href="#home"><i class="fa-solid fa-arrow-up"></i></a></p>
     </footer>
 
 
